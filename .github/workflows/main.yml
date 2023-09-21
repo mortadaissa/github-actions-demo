@@ -20,6 +20,7 @@ jobs:
       - name: sleep
         run: sleep 10
   build-docker-2:
+    needs: [build-docker-1]
     runs-on: ubuntu-latest
 
     steps:
