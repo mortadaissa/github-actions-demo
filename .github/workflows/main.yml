@@ -17,3 +17,19 @@ jobs:
 
       - name: echo
         run: echo "hello"
+      - name: sleep
+        run: sleep 4000
+  build-docker-2:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: echo
+        run: echo "hello 2"
+      - name: sleep
+        run: sleep 4000
+  
+
+    
+  
